@@ -20,11 +20,16 @@ body {
   background-position: -850px -110px, 180px -100px;
   background-size: cover;
   background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 .proof {
   max-width: 60rem;
-  margin: 7rem auto;
+  margin: 7rem;
 }
 
 .proof .top {
@@ -39,7 +44,7 @@ body {
 }
 
 .proof .top .text h1 {
-  font-size: 45px;
+  font-size: 50px;
   color: var(--Very-Dark-Magenta);
   margin-bottom: 0;
 }
@@ -94,13 +99,13 @@ body {
 .proof .review-cards .card {
   background-color: var(--Very-Dark-Magenta);
   color: var(--Light-Grayish-Magenta);
-  padding: 30px 25px 15px;
+  padding: 30px 25px 30px 30px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  height: 10rem;
+  height: max-content;
 }
 
 .proof .review-cards .card:nth-of-type(2) {
@@ -140,9 +145,35 @@ body {
   color: var(--Soft-Pink);
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(images/bg-pattern-top-mobile.svg),
+      url(images/bg-pattern-bottom-mobile.svg);
+    background-position: top right, bottom left;
+  }
+  .proof .top {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .proof .top .text p {
+    margin-bottom: 1rem;
+  }
+  .proof .top .stars .stars-card {
+    margin-left: 0;
+    flex-direction: column;
+    max-width: 15rem;
+  }
+  .proof .top .stars .stars-card > div {
+    margin-bottom: 0.3rem;
+  }
+  .proof .review-cards {
+    flex-wrap: wrap;
+  }
+}
+
 .attribution {
   font-size: 11px;
-  text-align: center;
+  margin-bottom: 10px;
 }
 
 .attribution a {
