@@ -1,6 +1,6 @@
 # Frontend Mentor - Social Proof Section Component Solution
 
-This is a solution to the [social proof section component challenge on frontend mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Social Proof Section Component Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -28,6 +28,7 @@ This is a solution to the [social proof section component challenge on frontend 
 - Semantic HTML5 markup
 - CSS custom properties
 - Google Fonts
+- Normalize CSS
 
 ## Author
 
