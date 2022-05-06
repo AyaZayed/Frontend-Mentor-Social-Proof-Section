@@ -6,6 +6,11 @@
   --White: hsl(0, 0%, 100%);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-size: 15px;
   font-family: "League Spartan", sans-serif;
@@ -15,11 +20,124 @@ body {
   flex-direction: column;
 }
 
+.proof {
+  max-width: 60rem;
+  margin: 7rem;
+}
+
+.proof .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.proof .top .text {
+  max-width: 20rem;
+}
+
+.proof .top .text h1 {
+  font-size: 40px;
+  color: var(--Very-Dark-Magenta);
+  margin-bottom: 0;
+}
+
+.proof .top .text p {
+  color: var(--Dark-Grayish-Magenta);
+  margin-top: 5px;
+}
+
+.proof .top .stars {
+  max-width: 40rem;
+}
+
+.proof .top .stars .stars-card {
+  display: flex;
+  align-items: center;
+  background-color: var(--Light-Grayish-Magenta);
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  width: 20rem;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.proof .top .stars-card:nth-of-type(2) {
+  margin-left: 3rem;
+}
+
+.proof .top .stars-card:nth-of-type(3) {
+  margin-left: 6rem;
+}
+
+.proof .top .stars .stars-card img {
+  height: 1rem;
+  margin-right: 0.3rem;
+}
+
+.proof .review-cards {
+  display: flex;
+  column-gap: 20px;
+}
+
+.proof .review-cards .card {
+  background-color: var(--Very-Dark-Magenta);
+  color: var(--Light-Grayish-Magenta);
+  padding: 30px 25px 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 10rem;
+}
+
+.proof .review-cards .card:nth-of-type(2) {
+  margin-top: 1rem;
+}
+
+.proof .review-cards .card:nth-of-type(3) {
+  margin-top: 2rem;
+}
+
+.proof .review-cards .card .person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.proof .review-cards .card .person img {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 20px;
+}
+
+.proof .card .person h4 {
+  font-weight: 400;
+}
+
+.proof .card .person h4:last-of-type {
+  color: var(--Soft-Pink);
+}
+
 .attribution {
   font-size: 11px;
-  text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Dark-Grayish-Magenta);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--Soft-Pink);
+  text-decoration: underline;
 }
