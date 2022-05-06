@@ -133,15 +133,19 @@ body {
   margin-right: 20px;
 }
 
-.proof .card .person h4:first-of-type {
+.proof .card .person h2 {
+  font-size: 16px;
+}
+
+.proof .card .person h2:first-of-type {
   font-weight: 500;
 }
 
-.proof .card .person h4:last-of-type {
+.proof .card .person h2:last-of-type {
   font-weight: 400;
 }
 
-.proof .card .person h4:last-of-type {
+.proof .card .person h2:last-of-type {
   color: var(--Soft-Pink);
 }
 

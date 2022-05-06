@@ -19,7 +19,7 @@ This is a solution to the [Social Proof Section Component Challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Social Proof Section](https://www.frontendmentor.io/solutions/stats-preview-card-component-H1CdEr0r5)
+- Solution URL: [Social Proof Section](https://www.frontendmentor.io/solutions/social-proof-section-HJTOA4f85)
 
 ## My process
 
