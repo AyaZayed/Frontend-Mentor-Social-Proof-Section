@@ -14,15 +14,17 @@
 body {
   font-size: 15px;
   font-family: "League Spartan", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: -850px -110px, 180px -100px;
+  background-size: cover;
+  background-color: var(--white);
 }
 
 .proof {
   max-width: 60rem;
-  margin: 7rem;
+  margin: 7rem auto;
 }
 
 .proof .top {
@@ -37,7 +39,7 @@ body {
 }
 
 .proof .top .text h1 {
-  font-size: 40px;
+  font-size: 45px;
   color: var(--Very-Dark-Magenta);
   margin-bottom: 0;
 }
@@ -57,12 +59,18 @@ body {
   background-color: var(--Light-Grayish-Magenta);
   margin-top: 1rem;
   padding: 1rem 1.5rem;
-  width: 20rem;
+  width: 22rem;
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
+}
+
+.proof .top .stars .stars-card p {
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+  margin-left: 1.5rem;
 }
 
 .proof .top .stars-card:nth-of-type(2) {
@@ -120,7 +128,11 @@ body {
   margin-right: 20px;
 }
 
-.proof .card .person h4 {
+.proof .card .person h4:first-of-type {
+  font-weight: 500;
+}
+
+.proof .card .person h4:last-of-type {
   font-weight: 400;
 }
 
@@ -130,6 +142,7 @@ body {
 
 .attribution {
   font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
